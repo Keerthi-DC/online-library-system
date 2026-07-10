@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "category": "Fiction",
+    "description": "A novel about the American Dream.",
+    "rating": 4
+  },
+  {
+    "id": "2",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "category": "Non-Fiction",
+    "description": "Cosmology for the curious.",
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "category": "Sci-Fi",
+    "description": "Epic science fiction saga.",
+    "rating": 5
+  }
+]
