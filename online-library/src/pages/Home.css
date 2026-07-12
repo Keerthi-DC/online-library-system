@@ -1,0 +1,40 @@
+/* src/pages/Home.css */
+.home-page {
+  padding: 2rem;
+}
+
+.home-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.categories {
+  margin-bottom: 2rem;
+}
+
+.category-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.category-card:hover {
+  opacity: 0.85;
+}
+
+.popular .book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}

@@ -1,5 +1,6 @@
 // src/routes/index.jsx
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
+import App from '../App';
 import Home from '../pages/Home';
 import Browse from '../pages/Browse';
 import Details from '../pages/Details';
@@ -9,30 +10,19 @@ import NotFound from '../pages/NotFound';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />, // Home page as entry
-  },
-  {
-    path: '/books',
-    element: <Browse />, // Show all books
-  },
-  {
-    path: '/books/:category',
-    element: <Browse />, // Filter by category
-  },
-  {
-    path: '/books/:category/:id',
-    element: <Details />, // Book details
-  },
-  {
-    path: '/add',
-    element: <AddBook />, // Add new book
+    element: <App />, // layout with Navbar
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'books', element: <Browse /> },
+      { path: 'books/:category', element: <Browse /> },
+      { path: 'books/:category/:id', element: <Details /> },
+      { path: 'add', element: <AddBook /> },
+    ],
   },
   {
     path: '*',
-    element: <NotFound />, // 404 page
+    element: <NotFound />, // no Navbar
   },
 ]);
 
-export default function AppRouter() {
-  return <RouterProvider router={router} />;
-}
+export default router;

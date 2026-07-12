@@ -1,0 +1,30 @@
+/* src/pages/NotFound.css */
+.notfound-page {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.notfound-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #dc2626;
+}
+
+.notfound-page p {
+  margin-bottom: 2rem;
+  color: #4b5563;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.home-link:hover {
+  opacity: 0.85;
+}
