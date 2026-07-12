@@ -13,7 +13,7 @@ const Details = () => {
     return (
       <div className="details-page">
         <p>Book not found.</p>
-        <button onClick={() => navigate('/books')} className="back-btn">
+        <button onClick={() => navigate('/')} className="back-btn">
           Back to Browse
         </button>
       </div>

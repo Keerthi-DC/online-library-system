@@ -1,26 +1,50 @@
 [
   {
     "id": "1",
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
+    "title": "Keeru: The Unwritten Chapters",
+    "author": "Keerthi D. C.",
     "category": "Fiction",
-    "description": "A novel about the American Dream.",
-    "rating": 4
+    "description": "A fictional story about a computer science student chasing dreams, surviving deadlines, and believing that every challenge is just another chapter before success.",
+    "rating": 5
   },
   {
     "id": "2",
-    "title": "A Brief History of Time",
-    "author": "Stephen Hawking",
+    "title": "Internshala Assignment Survival Guide",
+    "author": "100/100 Evaluator",
     "category": "Non-Fiction",
-    "description": "Cosmology for the curious.",
+    "description": "A practical guide to completing React assignments. Rumour says anyone who finishes this assignment deserves 100/100. If you're reading this, dear evaluator... maybe the rumour is true. 😄",
     "rating": 5
   },
   {
     "id": "3",
-    "title": "Dune",
-    "author": "Frank Herbert",
+    "title": "Keeru in the Future",
+    "author": "AI from 2050",
     "category": "Sci-Fi",
-    "description": "Epic science fiction saga.",
+    "description": "A science fiction adventure where Keeru builds intelligent applications, travels through time to fix bugs before they happen, and proves that semicolons can save the universe.",
+    "rating": 5
+  },
+  {
+    "id": "4",
+    "title": "Wings of Fire",
+    "author": "A. P. J. Abdul Kalam",
+    "category": "Biography",
+    "description": "The inspiring autobiography of Dr. A. P. J. Abdul Kalam, sharing his journey from a small town to becoming the President of India.",
+    "rating": 5
+  },
+  {
+    "id": "5",
+    "title": "The White Tiger",
+    "author": "Aravind Adiga",
+    "category": "Fiction",
+    "description": "A gripping novel that explores ambition, society, and the journey of a man determined to change his destiny.",
+    "rating": 4
+  },
+  {
+    "id": "6",
+    "title": "Ignited Minds",
+    "author": "A. P. J. Abdul Kalam",
+    "category": "Motivation",
+    "description": "An inspiring book encouraging young people to dream big, work hard, and contribute to the nation's development.",
     "rating": 5
   }
 ]

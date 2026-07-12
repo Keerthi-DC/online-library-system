@@ -1,32 +1,37 @@
-/* src/pages/Browse.css */
-.browse-page {
-  padding: 2rem;
+.category-cards {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
 }
 
-.browse-page h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #1e293b;
+.category-card {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+}
+
+.active-category {
+  box-shadow: 0 0 0 2px #1d4ed8;
 }
 
 .search-input {
   width: 100%;
-  max-width: 400px;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #cbd5e1;
-  border-radius: 4px;
-  font-size: 1rem;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
 }
 
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-@media (max-width: 600px) {
-  .search-input {
-    max-width: 100%;
-  }
+.no-books {
+  margin-top: 30px;
+  font-size: 18px;
 }

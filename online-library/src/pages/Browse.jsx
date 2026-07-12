@@ -1,20 +1,29 @@
-// src/pages/Browse.jsx
-import { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { selectAllBooks, selectBooksByCategory } from '../store/booksSlice';
-import BookCard from '../components/BookCard';
-import './Browse.css';
+import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import {
+  selectAllBooks,
+  selectBooksByCategory,
+} from "../store/booksSlice";
+import BookCard from "../components/BookCard";
+import "./Browse.css";
+
+const categories = ["Fiction", "Non-Fiction", "Sci-Fi"];
 
 const Browse = () => {
   const { category } = useParams();
+
   const allBooks = useSelector(selectAllBooks);
-  const books = category ? useSelector(selectBooksByCategory(category)) : allBooks;
 
-  const [search, setSearch] = useState('');
+  const books = category
+    ? useSelector(selectBooksByCategory(category))
+    : allBooks;
 
-  const filtered = books.filter((book) => {
+  const [search, setSearch] = useState("");
+
+  const filteredBooks = books.filter((book) => {
     const term = search.toLowerCase();
+
     return (
       book.title.toLowerCase().includes(term) ||
       book.author.toLowerCase().includes(term)
@@ -23,20 +32,43 @@ const Browse = () => {
 
   return (
     <div className="browse-page">
-      <h1>{category ? `${category} Books` : 'All Books'}</h1>
+      <h1>{category ? `${category} Books` : "All Books"}</h1>
+
+      <div className="category-cards">
+        <Link to="/books" className="category-card">
+          All
+        </Link>
+
+        {categories.map((cat) => (
+          <Link
+            key={cat}
+            to={`/books/${cat}`}
+            className={`category-card ${
+              category === cat ? "active-category" : ""
+            }`}
+          >
+            {cat}
+          </Link>
+        ))}
+      </div>
+
       <input
+        className="search-input"
         type="text"
-        placeholder="Search by title or author"
+        placeholder="Search by title or author..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="search-input"
       />
+
       <div className="book-grid">
-        {filtered.map((book) => (
+        {filteredBooks.map((book) => (
           <BookCard key={book.id} book={book} />
         ))}
       </div>
-      {filtered.length === 0 && <p>No books found.</p>}
+
+      {filteredBooks.length === 0 && (
+        <p className="no-books">No books found.</p>
+      )}
     </div>
   );
 };
