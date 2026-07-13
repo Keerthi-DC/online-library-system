@@ -25,7 +25,7 @@ const Navbar = () => {
 
         <li>
           <NavLink
-            to="/browse"
+            to="/books"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             Browse

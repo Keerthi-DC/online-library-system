@@ -33,14 +33,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "book",
-    element: <Navigate to="/books" replace />,
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
+  { path: "book", element: <Navigate to="/books" replace />, },
+  { path: "browse", element: <Navigate to="/books" replace />, },
+  { path: "*", element: <NotFound />, },
 ]);
 
 export default router;
