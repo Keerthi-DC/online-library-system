@@ -1,20 +1,58 @@
+.home-page {
+  padding: 2rem;
+}
+
+.home-page h1 {
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.categories,
+.popular,
+.view-all {
+  margin-bottom: 2.5rem;
+}
+
+.category-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  padding: 12px 22px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
 .view-all {
   text-align: center;
-  margin-top: 40px;
 }
 
 .view-all-btn {
   display: inline-block;
   text-decoration: none;
   color: white;
-  background: linear-gradient(90deg, #3b82f6, #6366f1);
   padding: 14px 28px;
-  border-radius: 10px;
-  font-size: 18px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
   font-weight: 600;
-  transition: 0.3s;
 }
 
 .view-all-btn:hover {
-  transform: translateY(-2px);
+  opacity: .9;
 }

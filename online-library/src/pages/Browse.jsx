@@ -15,9 +15,8 @@ const Browse = () => {
 
   const allBooks = useSelector(selectAllBooks);
 
-  const books = category
-    ? useSelector(selectBooksByCategory(category))
-    : allBooks;
+  // Determine which books to display. If a category is present we filter the full list.
+  const books = category ? allBooks.filter((b) => b.category === category) : allBooks;
 
   const [search, setSearch] = useState("");
 

@@ -1,21 +1,28 @@
+.browse-page {
+  padding: 2rem;
+}
+
+.browse-page h1 {
+  margin-bottom: 1.5rem;
+}
+
 .category-cards {
   display: flex;
   gap: 15px;
-  margin: 25px 0;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .category-card {
   text-decoration: none;
   color: white;
-  background: linear-gradient(90deg, #3b82f6, #6366f1);
   padding: 10px 20px;
   border-radius: 8px;
-  transition: 0.3s;
+  background: linear-gradient(90deg,#3b82f6,#6366f1);
 }
 
 .category-card:hover {
-  transform: translateY(-2px);
+  opacity: .9;
 }
 
 .active-category {
@@ -27,11 +34,16 @@
   max-width: 500px;
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #d1d5db;
   margin-bottom: 30px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 24px;
 }
 
 .no-books {
   margin-top: 30px;
-  font-size: 18px;
 }

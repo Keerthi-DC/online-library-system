@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import Browse from "../pages/Browse";
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
         element: <AddBook />,
       },
     ],
+  },
+  {
+    path: "book",
+    element: <Navigate to="/books" replace />,
   },
   {
     path: "*",
