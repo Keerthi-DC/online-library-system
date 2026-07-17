@@ -18,7 +18,7 @@
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
-  background: linear-gradient(90deg,#3b82f6,#6366f1);
+  background: linear-gradient(90deg,#f870ea, #f896ff);
 }
 
 .category-card:hover {
@@ -26,7 +26,7 @@
 }
 
 .active-category {
-  box-shadow: 0 0 0 2px #1d4ed8;
+  box-shadow: 0 0 0 2px #f870ea;
 }
 
 .search-input {

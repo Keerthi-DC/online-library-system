@@ -6,17 +6,23 @@ const BookCard = ({ book }) => {
 
   return (
     <div className="book-card">
-      <p className="book-category">{category}</p>
+      <div className="book-cover">
+        <div className="book-category">{category}</div>
 
-      <h3 className="book-title">{title}</h3>
+        <div className="book-content">
+          <h3 className="book-title">{title}</h3>
 
-      <p className="book-author">
-        <strong>Author:</strong> {author}
-      </p>
+          <div className="book-details">
+            <p className="book-author">
+              <strong>Author:</strong> {author}
+            </p>
 
-      <p className="book-rating">
-        <strong>Rating:</strong> {rating} / 5
-      </p>
+            <p className="book-rating">
+              ⭐ {rating} / 5
+            </p>
+          </div>
+        </div>
+      </div>
 
       <NavLink
         to={`/books/${category}/${id}`}

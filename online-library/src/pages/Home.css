@@ -4,7 +4,7 @@
 
 .home-page h1 {
   margin-bottom: 1.5rem;
-  color: #1e293b;
+  color: #c01d95;
 }
 
 .categories,
@@ -23,7 +23,7 @@
   padding: 12px 22px;
   text-decoration: none;
   color: white;
-  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  background: linear-gradient(90deg, #f870ea, #f896ff);
   border-radius: 8px;
   transition: 0.3s;
 }
@@ -49,7 +49,7 @@
   color: white;
   padding: 14px 28px;
   border-radius: 8px;
-  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  background: linear-gradient(90deg, #f870ea, #f896ff);
   font-weight: 600;
 }
 
