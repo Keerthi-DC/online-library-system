@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const activeStyle = {
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__logo">Online Library</div>
+      <div className="navbar__logo"><img src={logo} alt="Online Library" className="navbar__logo-image"/>Online Library</div>
 
       <ul className="navbar__links">
         <li>
