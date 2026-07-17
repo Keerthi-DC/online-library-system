@@ -31,7 +31,7 @@ const Browse = () => {
 
   return (
     <div className="browse-page">
-      <h1>{category ? `${category} Books` : "All Books"}</h1>
+      <h1 style={{marginTop: "20px"}}>{category ? `${category} Books` : "All Books"}</h1>
 
       <div className="category-cards">
         <Link to="/books" className="category-card">

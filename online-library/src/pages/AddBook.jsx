@@ -54,7 +54,7 @@ const AddBook = () => {
 
   return (
     <div className="addbook-page">
-      <h2>Add a New Book</h2>
+      <h2 style={{marginTop: "20px"}}>Add a New Book</h2>
       <form onSubmit={handleSubmit} className="addbook-form">
         <label>
           Title
