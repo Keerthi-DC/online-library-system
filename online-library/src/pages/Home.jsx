@@ -13,10 +13,10 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <h1>Welcome to the Online Library</h1>
+      <h1 style={{marginTop:"20px"}}>Welcome to the Online Library</h1>
 
       <section className="categories">
-        <h2>Book Categories</h2>
+        <h2 style={{marginBottom:"20px"}}>Book Categories</h2>
 
         <div className="category-cards">
           {categories.map((cat) => (
